@@ -3,3 +3,6 @@
 @GetMapping("...") = in ("...") for url what every time goes to controller
                      every time when user type /... our app will go to the
                      controller specified method
+
+@EnableWebMvc = equals to <mvc:annotation-driver>
+
