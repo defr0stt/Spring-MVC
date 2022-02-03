@@ -6,3 +6,6 @@
 
 @EnableWebMvc = equals to <mvc:annotation-driver>
 
+@RequestMapping("...") = word for a group of methods to html pages
+                         example : ("/main_page") and then all method
+                         from this controller starts with .../main_page/...
