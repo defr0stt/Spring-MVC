@@ -9,3 +9,7 @@
 @RequestMapping("...") = word for a group of methods to html pages
                          example : ("/main_page") and then all method
                          from this controller starts with .../main_page/...
+
+@RequestParam(value = "name", required = false) = first - name and key in query and
+                                                  second param means that this query can be performed
+                                                  without parameters
