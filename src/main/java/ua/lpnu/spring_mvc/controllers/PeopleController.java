@@ -30,6 +30,13 @@ public class PeopleController {
         return "people/show";
     }
 
+//    @GetMapping("/new")
+//    public String newPerson(Model model) {
+//        model.addAttribute("person",new Person());
+//        return "people/new";
+//    }
+//    the same code as lower
+
     @GetMapping("/new")
     public String newPerson(@ModelAttribute("person") Person person) {
         return "people/new";

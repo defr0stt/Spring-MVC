@@ -5,7 +5,7 @@ public class Person
     private int id;
     private String name;
 
-    Person(){}
+    public Person(){}
 
     public Person(int id, String name) {
         this.id = id;

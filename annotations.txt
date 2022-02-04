@@ -14,4 +14,7 @@
                                                   second param means that this query can be performed
                                                   without parameters
 
-@ModelAttribute = creates a pair of key-value for every model in controller
+@ModelAttribute = for methods : creates a pair of key-value for every model in controller
+                  for parameters : creates a specified object, add it to Model
+
+@PathVariable = identifies value from URL and can use it in method
