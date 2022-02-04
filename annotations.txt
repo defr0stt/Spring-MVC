@@ -13,3 +13,5 @@
 @RequestParam(value = "name", required = false) = first - name and key in query and
                                                   second param means that this query can be performed
                                                   without parameters
+
+@ModelAttribute = creates a pair of key-value for every model in controller
