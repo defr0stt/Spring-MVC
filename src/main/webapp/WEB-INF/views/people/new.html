@@ -9,9 +9,19 @@
 <!--th:action="@{/people} - where the form writes the data
     th:object="${person}" - for this object the form creates
     th:field="*{name}" - specifies the value name - the field in Person class-->
+
 <form th:method="POST" th:action="@{/people}" th:object="${person}">
     <label for="name">Enter name: </label>
-    <input type="text" th:field="*{name}" id="name"/>
+    <input type="text" th:field="*{name}" id="name"/>                                                   <!--th:if shows errors, if it exists-->
+    <div style="color:red" th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name Error</div>    <!--line for errors-->
+    <br/>
+    <label for="age">Enter age: </label>
+    <input type="text" th:field="*{age}" id="age"/>
+    <div style="color:red" th:if="${#fields.hasErrors('age')}" th:errors="*{age}">Age Error</div>
+    <br/>
+    <label for="email">Enter email: </label>
+    <input type="text" th:field="*{email}" id="email"/>
+    <div style="color:red" th:if="${#fields.hasErrors('email')}" th:errors="*{email}">Email Error</div>
     <br/>
     <input type="submit" value="Create!"/>
 </form>
