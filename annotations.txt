@@ -18,3 +18,5 @@
                   for parameters : creates a specified object, add it to Model
 
 @PathVariable = identifies value from URL and can use it in method
+
+@Valid = it checks for validation some functionality
